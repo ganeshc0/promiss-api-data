@@ -6,30 +6,19 @@ function completeProject()
  return new Promise(function(resolve,reject){
  var status=true;
  console.log('hello') ;
-//  if(status)
-//    resolve();
-//  else   
-//    reject();
   })
 
  } 
-//  completeProject().then(function(){
-//     console.log('complete project');
-//  }).catch(function(){
-//     console.log('faield project');
-//  });/
-// console.log(completeProject());
 
 fetch('https://randomuser.me/api').then(function(res){
      data = res.json();
     return data;
-
 }).then(function(data){
     console.log(data);
      A=data.results[0];
    
     var email =A.email;
-    var fullName ="I am <br>"+A.name.first+" "+A.name.last;
+    var fullName ="Hi, My Name Is <br>"+A.name.first+" "+A.name.last;
     var img =A.picture.large;
     var number =A.phone;
     var location =A.location.state+" "+A.location.city+" "+A.location.country+" "+A.location.postcode;

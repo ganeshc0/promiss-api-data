@@ -1,6 +1,6 @@
 #content{
     
-    width: 550px;
+    width: auto;
     height: 100px;
     background-color: rgba(214, 220, 126, 0.996);
     font-size: 25px;
@@ -35,7 +35,7 @@ button{
 .container-fluid{
     
     background-color: rgb(213, 219, 249);
-    width: 100px;
+    width: auto;
     height: 600px;
     text-align: center;   
 }
